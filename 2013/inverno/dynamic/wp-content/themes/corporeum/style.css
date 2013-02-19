@@ -1,0 +1,847 @@
+/*
+Theme name: Corporeum
+Author: MG Studio
+Author URI: http://mgstudio.com.br/
+Version: 1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Muli|Playfair+Display+SC:400italic,400);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+
+html,
+body { height: 100% }
+body,
+#foot {
+	background: #000 url(img/dot.png) center top;
+	min-width: 980px;
+	position: relative;
+}
+hr,
+.antispam { display: none !important }
+a { text-decoration: none }
+label,
+button { cursor: pointer }
+
+/* Header */
+
+#head {
+	height: 80px;
+	left: 50%;
+	margin-left: -480px;
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	width: 960px;
+	z-index: 50;
+}
+#logo { 
+	margin-bottom: 15px; 
+	
+	/* novo */
+	float: left;
+	width: 230px;
+}
+#logo img { 
+	display: block;
+	
+	/* novo */
+	width: 230px;
+}
+
+.menu-item {
+	display: inline;
+	font-family: 'Muli', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	
+	/* novo */
+	margin-right: 1.65em;
+}
+
+@-moz-document url-prefix() {
+    .menu-item { margin-right: 1.8em; }
+}
+
+.item-blog {
+	float: right;
+	margin-right: 0;
+}
+#menu a {
+	color: #d9d8d8;
+
+	-webkit-transition: color 0.3s ease-out;
+	   -moz-transition: color 0.3s ease-out;
+		 -o-transition: color 0.3s ease-out;
+			transition: color 0.3s ease-out;
+}
+#menu a:hover,
+#menu a:focus,
+#menu a:active { color: #584b41 }
+#social {
+	/*position: absolute;
+	right: 0;
+	top: 34px;*/
+}
+.social-item {
+	float: right;
+	margin-left: 8px;
+}
+
+/* Home */
+
+.home #body {
+	background: url(img/home.jpg) no-repeat center 100px;
+	background-size: cover;
+	position: relative;
+}
+#network {
+	background/*\**/:url(img/arrow-left-black.png) no-repeat 0 top;
+	background: url(img/arrow-left-black.png) no-repeat 0 top;
+	border-right: 4px solid #000;
+	bottom: 135px;
+	overflow: hidden;
+	padding-left: 70px;
+	position: absolute;
+	right: 0;
+}
+.network-item {
+	background: #000;
+	border: 4px solid #000;
+	border-right: 0 none;
+	float: left;
+}
+.network-item img {
+	display: block;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	   -moz-transition: opacity 0.3s ease-out; 
+	     -o-transition: opacity 0.3s ease-out; 
+	        transition: opacity 0.3s ease-out; 
+}
+#network:hover .network-item img { opacity: .3 }
+#network:hover .network-item:hover img { opacity: 1 }
+
+
+/* Pages */
+
+#body {
+	margin-bottom: -45px;
+	min-height: 100%;
+	overflow: hidden;
+}
+#content {
+	margin: 0 auto;
+	padding: 146px 0 80px;
+	width: 960px;
+}
+.entry-title {
+	border-bottom: 1px solid #2b251f;
+	border-top: 1px solid #2b251f;
+	color: #584b41;
+	display: inline-block;
+	font-family: 'Playfair Display SC', serif;
+	font-size: 54px;
+	font-style: italic;
+	line-height: 60px;
+	margin-bottom: 30px;
+	padding: 0 2px 8px 3px;
+	position: relative;
+	text-transform: uppercase;
+}
+.entry-title img {
+	display: block;
+	margin: 0 auto;
+}
+.entry-title span {
+	background: url(img/corporeum-mini.png) no-repeat;
+	display: block;
+	height: 23px;
+	left: 0;
+	position: absolute;
+	top: -32px;
+	width: 170px;
+}
+
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+	color: #d9d8d6;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 21px;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	border-bottom: 1px solid #2b251f;
+	border-top: 1px solid #2b251f;
+	clear: both;
+	color: #584b41;
+	display: inline-block;
+	font-family: serif;
+	font-size: 40px;
+	font-style: italic;
+	line-height: 50px;
+	margin-bottom: 21px;
+	padding: 0 0 5px 3px;
+	text-align: center;
+}
+.entry-content .alignleft {
+	float: right;
+	margin: 0 0 21px 42px;
+}
+.entry-content .alignright {
+	float: right;
+	margin: 0 42px 21px 0;
+}
+.entry-content .aligncenter {
+	display: block;
+	margin: 0 auto 21px;
+	text-align: center;
+}
+
+.slider-prev,
+.slider-next {
+	background: url(img/arrows_black.jpg) no-repeat 0 0;
+	display: block;
+	height: 80px;
+	margin-top: -63px;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+}
+.slider-prev {
+	/*background-position: 15px center;*/
+	left: -80px;
+}
+.slider-next {
+	background-position: -40px center;
+	right: -80px;
+}
+
+.box {
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+}
+.entry-content .box-list {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 762px;
+}
+.entry-content .box-item {
+	float: left;
+	margin: 0 46px 46px 0;
+	position: relative;
+}
+
+/* Corporeum */
+
+.corporeum #body {
+	background: url(img/corporeum.jpg) no-repeat center 100px;
+	background-size: cover;
+}
+.corporeum .entry-title {
+	border: 0 none;
+	display: block;
+	margin: 0 auto 20px;
+	padding: 130px 0 0;
+	text-align: center;
+}
+.entry-content .image-menu { 
+	position: absolute;
+	border-right: 4px solid #000;
+	overflow: hidden;
+	bottom: 70px;
+	left: 50%;
+	margin-left: -234px;
+	width: 468px;
+	background: #000;
+}
+.entry-content .image-menu li { float: left }
+.entry-content .image-menu img {
+	border: 4px solid #000;
+	border-right: 0 none;
+	display: block;
+}
+
+.entry-content .campanha-list {
+	margin: 0;
+	text-align: center;
+}
+.no-js .campanha-item { display: none }
+.no-js .campanha-item:first-child { display: block }
+
+/* C.Consciência */
+
+.c-consciencia .alignright {
+	position: relative;
+	top: -50px;
+}
+
+/* Lookbook / Clipping */
+
+.entry-content .lookbook-list,
+.entry-content .clipping-list {
+	margin: 0 auto;
+	overflow: hidden;
+	padding-left: 14px;
+	width: 852px;
+}
+.entry-content .lookbook-list .look-item,
+.entry-content .clipping-list .clip-item,
+.entry-content .campanha-list .campanha-item {
+	float: left;
+	margin: 0 0 42px 0;
+	position: relative;
+}
+.look-item .info,
+.clip-item .info { display: none }
+.look-item span,
+.clip-item span,
+.box-item span,
+.campanha-item span {
+	background: rgba(0,0,0,.4) url(img/plus.png) no-repeat center center;
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	   -moz-transition: opacity 0.3s ease-out; 
+	     -o-transition: opacity 0.3s ease-out; 
+	        transition: opacity 0.3s ease-out; 
+}
+.look-item:hover span,
+.clip-item:hover span,
+.box-item:hover span, 
+.campanha-item:hover span{ opacity: 1 }
+
+/* Forms */
+
+#body form { width: 592px }
+#body .field {
+	float: left;
+	margin-right: 70px;
+}
+#body legend { display: none }
+input,
+textarea,
+button {
+	background: #2b2520;
+	border: 0 none;
+	color: #584b41;
+	font-family: 'Muli', sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 8px;
+	text-transform: lowercase;
+}
+textarea { height: 81px }
+label {
+	font-size: 12px;
+	text-transform: lowercase;
+}
+input,
+textarea { width: 210px }
+#multimarcasform .field-sobre { float: right }
+#body .field-submit {
+	clear: both;
+	float: right;
+}
+
+/* Footer */
+
+#foot {
+	background-image: none;
+	clear: both;
+	color: #584b41;
+	font-family: 'Muli', sans-serif;
+	font-size: 12px;
+	height: 45px;
+	text-transform: lowercase;
+}
+#newsform {
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 11px;
+	width: 960px;
+}
+#newsform .field,
+#newsform .legend {
+	float: left;
+	margin-right: 15px;
+}
+#newsform .legend {
+	background: url(img/icon-email.png) no-repeat left center;
+	line-height: 23px;
+	padding-left: 18px;
+}
+#newsform label,
+#newsform br { display: none }
+#newsform input { width: 170px }
+
+
+
+
+/******* Inclusões posteriores - 21-02-2013 **********/
+
+a#radio{
+	position: absolute;
+	
+	top: 6px;
+	right:0;
+	
+	width: 16px;
+	height: 18px;
+	
+	background:url(img/som.png) no-repeat left top;
+}
+a#radio:hover{ background-position:right top; }
+
+#nav{ float: left;	}
+
+#blog{ 
+	float: right; 
+	
+	margin-left: 28px;
+}
+
+#container_foot{
+	position: relative;
+	
+	width: 960px;
+	height: 45px;
+	
+	margin: 0 auto;
+}
+
+#by_mgstudio{
+	position: absolute;
+	
+	right:0;
+	top: 20px;
+	
+	color: #aaa;
+	font-size: 10px;
+}
+#by_mgstudio:hover{ color: #777; }
+
+ul#network { cursor: pointer; }
+
+li#network-item {background: rgba(0,0,0,.7);}
+
+.menu-item:last-child { margin-right: 0; }
+
+/*#network2 {
+	background/*\**//*:black url(img/arrow-left.png) no-repeat 23px center;	
+	background: rgba(0,0,0,.7) url(img/arrow-left.png) no-repeat 23px center;
+	border-right: 4px solid #000;
+	bottom: 290px;
+	overflow: hidden;
+	padding-left: 70px;
+	position: absolute;
+	right: 0;
+}
+.network2-item {
+	background: #000;
+	border: 4px solid #000;
+	border-right: 0 none;
+	float: left;
+}
+.network2-item img {
+	display: block;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	   -moz-transition: opacity 0.3s ease-out; 
+	     -o-transition: opacity 0.3s ease-out; 
+	        transition: opacity 0.3s ease-out; 
+}
+#network2:hover .network2-item img { opacity: .3 }
+#network2:hover .network2-item:hover img { opacity: 1 }
+*/
+
+
+/* Início */
+
+.inicio li.network-item{ position: relative; }
+
+.inicio li.network-item h2{
+	position: absolute;
+	
+	bottom: 0;
+	left: 0;
+	
+	width: 216px;
+	height: 30px;
+	
+	padding-top: 5px;
+	
+	background:url(img/bg_preto_transparente.png) repeat;
+	border: 0;
+	cursor: pointer;	
+	
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: white;		
+}
+
+
+
+/* Release e A Marca */
+
+#img_release, #img_amarca{
+	position: relative;
+	
+	left: 40px;	
+}
+
+#img_amarca{ 
+	top: -94px; 
+	
+	margin-left: 20px;
+}
+
+
+/* Clipping */
+
+.clipping-list{
+	width: 750px !important;
+
+	margin: 0 auto !important;
+	padding: 40px 0 0 40px !important;
+}
+
+.clip-item{
+	width: 250px;
+	height: 385px;
+}
+
+.clip-item img{	
+	position: relative;
+	
+	width: 200px;
+	height: 290px;
+/*	-webkit-transition: all 0.2s ease-out;  
+       -moz-transition: all 0.2s ease-out;  
+         -o-transition: all 0.2s ease-out;  
+            transition: all 0.2s ease-out;*/
+}
+
+.clip-item img:hover{
+/*  -webkit-transform: scale(1.2); 
+     -moz-transform: scale(1.2); 
+      -ms-transform: scale(1.2); 
+       -o-transform: scale(1.2); 
+          transform: scale(1.2);*/ 
+}
+
+
+/* C-Hotel */
+
+.c-hotel #body {
+	background: url(img/bg_chotel.jpg) no-repeat center 100px;
+	background-size: cover;
+	position: relative;
+}
+
+.c-hotel ul{ margin: 14px 0; }
+
+.c-hotel .slider-next{ right: -50px; }
+
+.c-hotel .slider-prev{ left: -50px; }
+
+
+/* Contato e Cadastro */
+
+ul#enderecos_contato li{
+	float: left;
+	
+	width: 240px;
+	
+	margin: 8px 0 30px 70px;	
+}
+
+ul#enderecos_contato li h2{
+	margin-bottom: 13px !important;
+	padding-bottom: 0 !important;
+	
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 38px !important;	
+}
+
+.entry-content form label span{
+	font-size: 12px !important;
+}
+
+
+/* págs. Corporeum, C. Code e C. CLub */
+
+.image-item{ position: relative; }
+
+.image-item img{
+	display: block;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	   -moz-transition: opacity 0.3s ease-out; 
+	     -o-transition: opacity 0.3s ease-out; 
+	        transition: opacity 0.3s ease-out;
+}
+
+.image-menu:hover .image-item img { opacity: .3 }
+.image-menu:hover .image-item:hover img { opacity: 1 }
+
+.image-item h1{
+	position: absolute;
+	
+	bottom: -20px;
+	
+	width: 100%;
+	height: 40px;
+	
+	padding-top: 5px;
+	
+	background:url(img/bg_preto_transparente.png) repeat;
+	border: 0;	
+	
+	font-family: 'Playfair Display', serif;
+	font-size: 35px;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;	
+}
+
+
+/* pág. Corporeum */
+
+.corporeum .entry-content .image-menu{
+	width: 702px;
+	
+	margin-left: -351px;
+}
+
+
+/* pág. C Code */
+
+.c-code #body {
+	background: url(img/ccode.jpg) no-repeat center 100px;
+	background-size: cover;
+}
+
+.page-id-557 .entry-title span, .page-id-551 .entry-title span{
+	background: url(img/ccode-mini.png) no-repeat;
+}
+
+
+/* pág. C Club */
+
+.c-club #body {
+	background: url(img/cclub.jpg) no-repeat center 100px;
+	background-size: cover;
+}
+
+.page-id-562 .entry-title span, .page-id-567 .entry-title span{
+	background: url(img/cclub-mini.png) no-repeat;
+}
+
+
+/* Lethicia */
+
+.lethicia h1.entry-title span { display: none; }
+
+
+/* páginas de Lookbook a Campanha */
+
+.campanha .entry-content, .lookbook .entry-content{ clear: both; }
+
+.campanha #content, .lookbook #content{ 
+	overflow: hidden; 
+
+	margin-bottom: 10px; 
+}
+
+.campanha h1, .lookbook h1{
+	float: left;
+	
+	width: 300px;
+}
+
+.bt_voltar{
+	display: block;
+	float: right;
+	
+	width: 80px;
+	
+	padding-top: 30px;
+	
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: right;
+	
+	font-family: 'Muli', serif;
+	font-size: 12px;	
+	color: white;
+}
+.bt_voltar:hover { color: #777; }
+
+.look-item{ margin-right: 10px !important; }
+
+.lookbook .slider-next { right: -70px !important; }
+
+.lookbook .slider-prev { left: -70px; }
+
+
+/* Fancybox */
+
+#fancybox-wrap #fancybox-right-ico,
+#fancybox-wrap #fancybox-left-ico {
+	height: 80px;
+	margin-top: -48px;
+	visibility: visible;
+	width: 40px;
+}
+
+#fancybox-wrap #fancybox-right-ico {
+	background:black url(img/arrows_black.jpg) no-repeat center right;
+	right: -40px;
+}
+
+#fancybox-wrap #fancybox-left-ico {
+	background:black url(img/arrows_black.jpg) no-repeat center left;
+	left: -40px;
+}
+
+#fancybox-wrap #fancybox-close {
+	background:url(img/bt_fechar_lookbook.jpg) no-repeat;
+	width: 60px;
+	right: -40px;
+	top: -40px;
+	height: 58px;
+}
+
+#fancybox-title {
+	bottom: 0;
+	top: 70%;
+}
+#fancybox-wrap #fancybox-title-over {
+	background: #000;
+	padding: 10px 23px 18px 23px;
+	position: absolute;
+	right: -117px;
+	top: 0;
+	/*width: 195px;*/
+}
+#fancybox-title-over h2 {
+	border: none;
+	color: #4d4138;	
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#fancybox-wrap #fancybox-title-over em {
+	display: block;
+	margin: 12px 0 9px;
+}
+#fancybox-wrap #fancybox-title-over span {
+	border-top: 1px dotted #4d4138;
+	color: #fff;
+	display: block;
+	font-family: 'Muli', serif;
+	font-size: 10px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+#fancybox-wrap #fancybox-title-over span:first-child { border: 0 none }
+#fancybox-wrap #fancybox-title-over b {
+	color: #4d4138;		
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+#fancybox-wrap #fancybox-title-over a {
+	height: 20px;
+	padding: 0;
+	position: static;
+	vertical-align: bottom;
+}
+#fancybox-wrap #fancybox-title-over img {
+	margin: 0;
+	padding: 0;
+	position: static;
+	vertical-align: top;
+}
+
+
+/* Formulário de newsletter (no rodapé) */
+
+form.newsletter {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	padding-top: 2px;
+	width: 760px;
+	margin-top: 0 !important;
+}
+
+.newsletter fieldset{ 
+	width: 760px !important; 
+	margin: 10px 0 0 0 !important;
+}
+
+.newsletter legend {
+	background: url(img/icon-email.png) no-repeat left 6px !important;
+	line-height: 23px !important;
+	padding: 5px 0 0 18px !important;
+	float: left !important;
+	margin-right: 15px !important;
+	border: 0 !important;
+	font-size: 100% !important;
+	font: inherit !important;
+	vertical-align: baseline !important;
+	margin: 0 15px 0 0 !important;
+	color: #584b41 !important;
+}
+
+.newsletter label{ display: none !important; }
+
+.newsletter li{
+	float: left !important;
+	width: 170px !important;
+	margin-right: 25px !important;
+}
+
+.newsletter input{ width: 170px !important; }
+
+.newsletter p.cf-sb{
+	position: absolute;
+	top: 2px;
+	right: 190px;
+	float: right !important;
+	width: 50px !important;
+	height: 23px !important;
+}
+
+.newsletter .sendbutton{
+	left:0 !important;
+	width: 50px !important;
+	height: 23px !important;
+}

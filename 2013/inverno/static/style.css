@@ -1,0 +1,308 @@
+/*@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic|Muli);*/
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Muli|Playfair+Display+SC:400italic,400);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+
+html,
+body { height: 100% }
+body,
+#foot {
+	background: #000 url(img/dot.png) center top;
+	min-width: 980px;
+}
+hr,
+.antispam { display: none !important }
+a { text-decoration: none }
+label,
+button { cursor: pointer }
+
+/* Header */
+
+#head {
+	height: 80px;
+	left: 50%;
+	margin-left: -480px;
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	width: 960px;
+}
+#logo { margin-bottom: 15px }
+#logo img { display: block }
+
+.menu-item {
+	display: inline;
+	font-family: 'Muli', sans-serif;
+	font-size: 11px;
+	margin-right: 16px;
+	text-transform: uppercase;
+}
+.item-blog {
+	float: right;
+	margin-right: 0;
+}
+#menu a { color: #fff }
+#social {
+	position: absolute;
+	right: 0;
+	top: 34px;
+}
+.social-item {
+	float: right;
+	margin-left: 5px;
+}
+
+/* Home */
+
+.home #body {
+	background: url(img/home.jpg) no-repeat center 100px;
+	background-size: cover;
+}
+#network {
+	background: rgba(0,0,0,.7) url(img/arrow-left.png) no-repeat 23px center;
+	border-right: 4px solid #000;
+	bottom: 135px;
+	overflow: hidden;
+	padding-left: 70px;
+	position: absolute;
+	right: 0;
+	
+}
+.network-item { float: left }
+.network-item img {
+	border: 4px solid #000;
+	border-right: 0 none;
+	float: left;
+}
+
+/* Pages */
+
+#body {
+	margin-bottom: -45px;
+	min-height: 100%;
+}
+#content {
+	margin: 0 auto;
+	padding: 146px 0 60px;
+	width: 960px;
+}
+.entry-title {
+	border-bottom: 1px solid #2b251f;
+	border-top: 1px solid #2b251f;
+	color: #584b41;
+	display: inline-block;
+	font-family: 'Playfair Display SC', serif;
+	font-size: 54px;
+	font-style: italic;
+	line-height: 60px;
+	margin-bottom: 30px;
+	padding: 0 2px 8px 3px;
+	position: relative;
+	text-transform: uppercase;
+}
+.entry-title img {
+	display: block;
+	margin: 0 auto;
+}
+.entry-title span {
+	background: url(img/corporeum-mini.png) no-repeat;
+	display: block;
+	height: 23px;
+	left: 0;
+	position: absolute;
+	top: -32px;
+	width: 170px;
+}
+
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+	color: #d9d8d6;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 21px;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	border-bottom: 1px solid #2b251f;
+	border-top: 1px solid #2b251f;
+	clear: both;
+	color: #584b41;
+	display: inline-block;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	font-style: italic;
+	line-height: 50px;
+	margin-bottom: 21px;
+	padding: 0 0 5px 3px;
+	text-align: center;
+}
+.entry-content .alignright {
+	float: right;
+	margin: 0 0 21px 42px;
+}
+
+.slider-prev,
+.slider-next {
+	background-color: #000;
+	background-image: url(img/arrows.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 126px;
+	margin-top: -63px;
+	position: absolute;
+	top: 50%;
+	width: 56px;
+}
+.slider-prev {
+	background-position: 15px center;
+	left: -56px;
+}
+.slider-next {
+	background-position: -59px center;
+	right: -56px;
+}
+
+.box {
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+}
+.entry-content .box-list {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 762px;
+}
+.entry-content .box-item {
+	border: 4px solid #fff;
+	border-top: 0 none;
+	float: left;
+	margin: 0 23px 46px;
+}
+.entry-content .box-name {
+	background: #fff;
+	border: 0 none;
+	color: #000;
+	display: block;
+	font-family: 'Muli', sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+}
+.entry-content .box-item img { display: block }
+
+/* Corporeum */
+
+.corporeum #body {
+	background: url(img/corporeum.jpg) no-repeat center 100px;
+	background-size: cover;
+}
+.corporeum .entry-title {
+	border: 0 none;
+	display: block;
+	margin: 0 auto 20px;
+	padding: 130px 0 0;
+	text-align: center;
+}
+.entry-content .image-menu { 
+	border-right: 4px solid #000;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 828px;
+}
+.entry-content .image-menu li { float: left }
+.entry-content .image-menu img {
+	border: 4px solid #000;
+	border-right: 0 none;
+	display: block;
+}
+
+.entry-content #campanha-list {
+	margin: 0;
+	text-align: center;
+}
+.entry-content #campanha-list .campanha-item {
+	display: none;
+	list-style: none;
+}
+.entry-content #campanha-list .campanha-item:first-child { display: block }
+
+/* C.Consciência */
+
+.c-consciencia .alignright {
+	position: relative;
+	top: -50px;
+}
+
+/* Forms */
+
+#body form { width: 592px }
+#body .field {
+	float: left;
+	margin-right: 70px;
+}
+#body legend { display: none }
+input,
+textarea,
+button {
+	background: #2b2520;
+	border: 0 none;
+	color: #584b41;
+	font-family: 'Muli', sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 8px;
+	text-transform: lowercase;
+}
+textarea { height: 81px }
+label {
+	font-size: 12px;
+	text-transform: lowercase;
+}
+input,
+textarea { width: 210px }
+#multimarcasform .field-sobre { float: right }
+#body .field-submit {
+	clear: both;
+	float: right;
+}
+
+/* Footer */
+
+#foot {
+	background-image: none;
+	clear: both;
+	color: #584b41;
+	font-family: 'Muli', sans-serif;
+	font-size: 12px;
+	height: 45px;
+	text-transform: lowercase;
+}
+#newsform {
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 11px;
+	width: 960px;
+}
+#newsform .field,
+#newsform .legend {
+	float: left;
+	margin-right: 15px;
+}
+#newsform .legend {
+	background: url(img/icon-email.png) no-repeat left center;
+	line-height: 23px;
+	padding-left: 18px;
+}
+#newsform label,
+#newsform br { display: none }
+#newsform input { width: 170px }

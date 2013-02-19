@@ -1,0 +1,278 @@
+/*
+Theme name: C.Blog
+Theme uri: http://corporeum.com.br/blog/
+Author: MG Studio
+Author uri: http://mgstudio.com.br/
+Version: 1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Muli:300,300italic);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+body { font: 14px/1.5em sans-serif }
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active { border-bottom: 1px dotted #000 }
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/* Layout */
+
+#head {
+	background: #000;
+	height: 140px;
+	margin-bottom: 35px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+#foot { display: none }
+
+#banners {
+	height: 246px;
+	margin: 0 auto 35px;
+	overflow: hidden;
+	position: relative;
+	width: 905px;
+}
+
+/* Content */
+
+#body {
+	margin: 0 auto;
+	width: 905px;
+}
+
+#content {
+	float: left;
+	padding-bottom: 50px;
+	width: 647px;
+}
+.hentry {
+	border: 1px solid #cecece;
+	margin-bottom: 75px;
+}
+.entry-date {
+	background: #000;
+	color: #fff;
+	float: left;
+	font: 300 italic 20px 'Muli', sans-serif;
+	left: -15px;
+	line-height: 35px;
+	margin-bottom: 30px;
+	padding: 0 15px;
+	position: relative;
+	text-transform: uppercase;
+	top: 15px;
+}
+.entry-title,
+#respond h3 {
+	clear: both;
+	font: 300 italic 30px 'Muli', sans-serif;
+	text-transform: uppercase;
+	margin: 0 20px 35px;
+}
+.entry-meta {
+	background: #000;
+	line-height: 30px;
+	overflow: auto;
+	position: relative;
+	text-align: right;
+	top: 40px;
+}
+.comments-link {
+	background: url(img/comments.png) no-repeat left center;
+	color: #fff;
+	font: 13px sans-serif;
+	padding: 0 15px 0 26px;
+}
+
+.hentry p, .comment-body p,
+.hentry ul, .comment-body ul,
+.hentry ol, .comment-body ol { margin: 0 20px 20px }
+.hentry img { max-width: 605px }
+.hentry em { font-style: italic }
+.hentry strong { font-weight: bold }
+.really_simple_share {
+	clear: both;
+	margin: 0 20px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 20px;
+}
+.alignleft {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.alignright {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.comment-body { margin-bottom: 60px }
+#comments,
+.says { display: none }
+.fn {
+	font: 300 italic 20px 'Muli', sans-serif;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+.avatar { float: right; }
+.comment-meta {
+	font: 11px sans-serif;
+	margin: 0 0 20px 30px;
+	text-transform: uppercase;
+}
+.comment-author { margin: 0 20px }
+
+#commentform { margin: 0 30px 20px }
+#commentform label {
+	color: #555;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#author,
+#email,
+#url,
+#comment {
+	border: 1px solid #000;
+	padding: 4px;
+}
+#submit {
+	background: #000;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	font: 300 italic 14px 'Muli', sans-serif;
+	padding: 7px 10px;
+	text-transform: uppercase;
+}
+
+/* Widgets */
+
+#widgets {
+	float: right;
+	width: 214px;
+}
+.widget {
+	border: 1px solid #cecece;
+	margin-bottom: 55px;
+	position: relative;
+	top: 20px;
+}
+.widget-title {
+	background: #000;
+	color: #fff;
+	display: block;
+	font: 300 italic 22px 'Muli', sans-serif;
+	line-height: 24px;
+	margin: 0 30px -10px;
+	padding: 9px 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: -21px;
+}
+.widget p,
+.widget ul,
+.tagcloud,
+#calendar_wrap { padding: 0 30px 20px }
+.widget h4 {
+	font: 300 italic 22px 'Muli', sans-serif;
+	padding: 7px 0 9px;
+	text-align: center;
+}
+
+#wp-calendar {
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+caption {
+	font-weight: bold;
+}
+th {
+	background: #000;
+	color: #fff;
+}
+td { color: #999 }
+td a { font-weight: bold }
+tbody {
+	border-bottom: 1px solid #000;
+}
+
+.widget_wpinstagram-widget {
+	padding-bottom: 15px;
+	text-align: center;
+}
+.wpinstagram img {
+	display: block;
+	margin: 0 auto;
+}
+
+#searchform { padding: 0 0 12px }
+#searchform legend,
+#searchform button { display: none }
+#s {
+	border: 1px solid #000;
+	display: block;
+	font: 13px sans-serif;
+	margin: 0 auto;
+	padding: 5px;
+	width: 172px;
+
+	-webkit-border-radius: 4px;
+			border-radius: 4px;
+	-webkit-background-clip: padding-box; background-clip: padding-box;
+
+	-webkit-box-shadow: 0px 0px 4px 0px #666;
+			box-shadow: 0px 0px 4px 0px #666;
+}
+
+#text-15 {
+	background: #000;
+	border-color: #000;
+	margin-bottom: 35px;
+	position: static;
+}
+#text-15 a { color: #fff }
+
+/* Pagenavi */
+
+.wp-pagenavi {
+	clear: both;
+	text-align: center;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	background: #000;
+	border-color: #000;
+	color: #fff;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
